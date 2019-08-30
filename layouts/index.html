@@ -2,19 +2,29 @@
 
 <main class="content" role="main">
 
-<div class="front">
-  <dl>
-    <dt>
-      <span class="word">eightbitraptor</span>
-      <span class="pronunciation">/eɪtbɪtˈræptə(r)/</span>
-      <span class="part">noun.</span>
-    </dt>
-    <dd>
-      <span class="definition-index">1.</span> {{ site.Params.description }}
-    </dd>
-</div>
+  <div class="front">
+    <dl>
+      <dt>
+        <span class="word">eightbitraptor</span>
+        <span class="pronunciation">/eɪtbɪtˈræptə(r)/</span>
+        <span class="part">noun.</span>
+      </dt>
+      <dd>
+        <span class="definition-index">1.</span> {{ site.Params.description }}
+      </dd>
+  </div>
+  <div class="nowplayingcard">
+    <h3>Currently Listening</h3>
+    <div class="nowplayingcontainer-inner">
+      <img id="trackart" src="#">
+      <div class="trackInfo">
+        <a id="tracktitle"></a>
+        <a href="#" id="trackartist"></a>
+      </div>
+    </div>
+  </div>
   <div class="archive">
-    <h2>Posts</h2>
+    <h3>Posts</h3>
     {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" }}
     {{ range .Pages }}
     <article class="archive-item">
