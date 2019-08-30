@@ -27,15 +27,13 @@ a {
   outline: none;
 }
 
-code {
-  max-width: 100%;
-  overflow: auto;
-  display: block;
-}
-
 img {
   max-width: 100%;
   height: auto;
+}
+
+pre {
+  padding: 2rem;
 }
 
 .wrapper {
