@@ -14,7 +14,7 @@
       </dd>
   </div>
   <div class="nowplayingcard">
-    <h3>Currently Listening</h3>
+    <h2>Currently Listening</h2>
     <div class="nowplayingcontainer-inner">
       <img id="trackart" src="#">
       <div class="trackInfo">
@@ -25,7 +25,7 @@
     </div>
   </div>
   <div class="archive">
-    <h3>Posts</h3>
+    <h2>Posts</h2>
     {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" }}
     {{ range .Pages }}
     <article class="archive-item">
